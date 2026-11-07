@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(29, 27, 38);
+}
+
+.join_room{
+    background-color: rgb(93, 75, 173);
+    display: block;
+    margin: auto;
+    width: 45%;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid rgb(60, 41, 147);
+    border-radius: 20px;
+}
+
+label{
+    font-size: 19px;
+}
+
+button{
+    font-size: 15px;
+}
