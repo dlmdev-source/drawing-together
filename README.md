@@ -1,12 +1,9 @@
-# drawing-together
-
-## Project Structure
-
-```
 drawing-together/
 │
 ├── frontend/
 │   ├── index.html
+│   ├── drawing.html
+│   ├── gallery.html
 │   ├── style.css
 │   └── script.js
 │
@@ -16,4 +13,3 @@ drawing-together/
         ├── main.rs
         ├── room.rs
         └── ws.rs
-```
