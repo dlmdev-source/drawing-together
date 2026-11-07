@@ -1,3 +1,8 @@
+# drawing-together
+
+## Project Structure
+
+```
 drawing-together/
 │
 ├── frontend/
@@ -13,3 +18,4 @@ drawing-together/
         ├── main.rs
         ├── room.rs
         └── ws.rs
+```
