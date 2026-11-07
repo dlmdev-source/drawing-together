@@ -7,7 +7,6 @@ drawing-together/
 │
 ├── frontend/
 │   ├── index.html
-│   ├── room.html
 │   ├── style.css
 │   └── script.js
 │
