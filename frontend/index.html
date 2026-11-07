@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Comic+Relief:wght@400;700&family=Delius+Swash+Caps&family=Lugrasimo&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <title>Joining</title>
 </head>
 <body>
     <nav>
-        <a href="index.html">Joining</a>
+        <a href="index.html" class="active">Joining</a>
         <a href="drawing.html">Drawing</a>
         <a href="gallery.html">Gallery</a>
     </nav>
@@ -17,11 +20,15 @@
         <h1>Join room</h1>
 
         <form>
-            <label for="username">Username:</label>
-            <input type="text">
+            <div class="row"> 
+                <label for="username">Username:</label>
+                <input type="text">
+            </div>
             <br>
-            <label for="room_code">Room code:</label>
-            <input type="text">
+            <div class="row">
+                <label for="room_code">Room code:</label>
+                <input type="text">
+            </div>
             <br>
         </form>
 
