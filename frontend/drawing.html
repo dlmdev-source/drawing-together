@@ -1,60 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Comic+Relief:wght@400;700&family=Delius+Swash+Caps&family=Lugrasimo&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <title>Drawing</title>
-</head>
-<body>
-    <nav>
-        <a href="index.html">Joining</a>
-        <a href="drawing.html" class="active">Drawing</a>
-        <a href="gallery.html">Gallery</a>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Comic+Relief:wght@400;700&family=Delius+Swash+Caps&family=Lugrasimo&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <title>Drawing</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Joining</a>
+            <a href="drawing.html" class="active">Drawing</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
 
-    <div class="container1">
-        <button onclick="toggleMenu">
-            Menu
-        </button>
-        <div class="menu">
-            <a class="menu-item" href="#">New</a>
-            <a class="menu-item" href="#">Save</a>
-            <a class="menu-item" href="#">Export</a>
-            <a class="menu-item" href="#">Gallery</a>
+        <div class="container1">
+
+            <div class="rows">
+
+                <div class="row1">
+                    <div class="menu1">
+                        <button class="menu" onclick="toggleMenu()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <div id="menu">
+                            <a href="#">New</a>
+                            <a href="#">Save</a>
+                            <a href="#">Export</a>
+                            <a href="#">Gallery</a>
+                        </div>
+                    </div>
+
+                    <div class="arrows">
+                        <button class="menu tools">
+                            <img src="media/arrow_left.png" alt="arrow on left">
+                        </button>
+                        <button class="menu tools">
+                            <img src="media/arrow_right.png" alt="arrow on right">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row2">
+                    <button class="menu tools" onclick="toggleMenu()">
+                        <img src="media/pencils.png" alt="pencils case">
+                    </button>
+                    <div id="menu">
+                    </div>
+
+                    <button class="menu tools">
+                        <img src="media/eraser.png" alt="eraser">
+                    </button>
+                    
+                    <button class="menu tools" onclick="toggleMenu()">
+                        <img src="media/rest_tools.png" alt="magic wand">
+                    </button>
+                    <div id="menu">
+                    </div>
+
+                    <button class="menu tools" onclick="toggleMenu()">
+                        <img src="media/layers.png" alt="layers">
+                    </button>
+                    <div id="menu">
+                    </div>
+                </div>
+            </div>
+
+            <div class="colors"></div>
         </div>
 
-        <button class="arrow left"></button>
-        <button class="arrow left"></button>
-    </div>
+        <div class="board"></div>
 
-    <button onclick="toggleMenu">
-        Pencils
-    </button>
-    <div class="menu">
-    </div>
+        <footer></footer>
 
-    <button>Eraser</button>
-    
-    <button onclick="toggleMenu">
-        Sprcial
-    </button>
-    <div class="menu">
-    </div>
-
-    <button onclick="toggleMenu">
-        Layers
-    </button>
-    <div class="menu">
-    </div>
-
-    <div class="colors"></div>
-
-    <div class="board"></div>
-
-    <footer></footer>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
